@@ -15,4 +15,4 @@ RUN  mkdir /var/www
 RUN  rm -f /etc/nginx/conf.d/default.conf
 COPY site.conf  /etc/nginx/conf.d/
 COPY site/. /var/www/
-RUN  chown nginx:nginx -R /var/www/
+RUN  chown nginx:nginx -R /var/www/ > ~/build/Dockerfile
